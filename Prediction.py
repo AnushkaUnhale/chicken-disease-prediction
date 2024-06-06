@@ -16,7 +16,7 @@ st.markdown(hide_default_format, unsafe_allow_html=True)
 #@st.cache(allow_output_mutation=True)
 @st.cache_data
 def load_model():
-  model = tf.keras.models.load_model("C:/Users/anush/Desktop/BE Project/model/mobilenetV2/mobilenetv2.h5", compile = False) 
+  model = tf.keras.models.load_model("./mobilenetv2.h5", compile = False) 
   return model
 with st.spinner('Model is being loaded..'):
   model=load_model()
