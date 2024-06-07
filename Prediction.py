@@ -112,7 +112,6 @@ New Bird Quarantine: Isolate and monitor new birds before introducing them to yo
     with col6:
         if image_class in class_messages:
           st.subheader(class_messages[image_class])
-          #st.audio(data=audio_file, autoplay=True)
           if(image_class != 'Healthy'):
             st.error("ISOLATE YOUR CHICKEN IMMEDIATELY!")
             st.info("Scroll down to know more")
